@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
   icon: {
     position: 'absolute',
     float: 'right',
-    right: '5vw'
+    right: '3vw'
   },
   mroot: {
     display: 'flex',
@@ -153,7 +153,7 @@ function Posts(props) {
                       <MoreVert />
                     </IconButton>
                     <CardContent>
-                      <Typography variant="h6" component="h3" color="primary">
+                      <Typography className={classes.jbTitle} variant="h6" component="h3" color="primary">
                         <Link className={classes.link} to={`/jobs/${post.id}`} >
                           {post.title}
             </Link>
@@ -182,23 +182,20 @@ function Posts(props) {
                       <MoreVert />
                     </IconButton>
                     <CardContent>
-                      <Typography variant="h6" component="h3" color="primary">
+                      <Typography className={classes.jbTitle} variant="h6" component="h3" color="primary">
                         <Link className={classes.link} to={`/jobs/${post.id}`} >
-                          Software Engineer II
+                          {post.title}
             </Link>
                       </Typography>
                       <Typography variant="caption">
-                        Palo Alto, United States
+                        {post.location}
           </Typography>
                       <Typography className={classes.pos} >
-                        $10k - $ 30k
+                        {post.company.name}
           </Typography>
-                      <Chip className={classes.chip} clickable={true} label="Nodejs" />
-                      <Chip className={classes.chip} clickable={true} label="Reactjs" />
-                      <Chip className={classes.chip} clickable={true} label="Javascript" />
-                      <Chip className={classes.chip} clickable={true} label="Full-Stack" />
-                      <Chip className={classes.chip} clickable={true} label="React-Native" />
-                      <Chip className={classes.chip} clickable={true} label="Angular.js" />
+                      {post.skills.map((skill, id) => (
+                        <Chip key={id} className={classes.chip} clickable={true} label={skill} />
+                      ))}
                     </CardContent>
 
 
