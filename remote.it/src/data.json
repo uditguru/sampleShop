@@ -1,0 +1,1241 @@
+[
+    {
+        "title": "Development Manager",
+        "description": "Development Manager",
+        "skills": [
+            "hadoop",
+            "reactjs",
+            "node.js"
+        ],
+        "location": "Sector 29, Gurgaon, Delhi, India",
+        "lngLat": [
+            77.06652,
+            28.4669448
+        ],
+        "createdOn": {
+            "$date": 1378408871190
+        },
+        "company": {
+            "name": "Expedia",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ab016911410500001a"
+        }
+    },
+    {
+        "title": "Manager, Development (Active Analytics)",
+        "description": "Manager, Development (Active Analytics)",
+        "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
+            "MEAN"
+        ],
+        "location": "Sector 29, Gurgaon, Delhi, India",
+        "lngLat": [
+            77.06652,
+            28.4669448
+        ],
+        "createdOn": {
+            "$date": 1378408871190
+        },
+        "company": {
+            "name": "Expedia",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ab016911410500001b"
+        }
+    },
+    {
+        "title": "Scala Developer - Scala, Java, PHP",
+        "description": "Scala Developer - Scala, Java, PHP",
+        "skills": [
+            "scala",
+            "GO",
+            "ruby",
+            "clojure"
+        ],
+        "location": "4437 Brookfield Corporate Drive #200, Chantilly, VA, United States",
+        "lngLat": [
+            -77.43887909999999,
+            38.8838379
+        ],
+        "createdOn": {
+            "$date": 1378408871191
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$o,id": "5228d9ab016911410500001c"
+        }
+    },
+    {
+        "title": "Scala Developer - Scala, Java, PHP",
+        "description": "Scala Developer - Scala, Java, PHP",
+        "skills": [
+            "scala",
+            "hadoop",
+            "reactjs",
+            "node.js"
+        ],
+        "location": "9891 Brokenland Parkway, Columbia, MD, United States",
+        "lngLat": [
+            -76.85182600000002,
+            39.18545
+        ],
+        "createdOn": {
+            "$date": 1378408871191
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ab016911410500001d"
+        }
+    },
+    {
+        "title": "Sr SCALA Software Engineer - Scala Developer - Scala Programmer",
+        "description": "Sr SCALA Software Engineer - Scala Developer - Scala Programmer",
+        "skills": [
+            "scala",
+            "java",
+            "hadoop",
+            "node.js"
+        ],
+        "location": "90 Park Avenue #1702, New York, NY, United States",
+        "lngLat": [
+            -73.9791168,
+            40.75068479999999
+        ],
+        "createdOn": {
+            "$date": 1378408871191
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ac016911410500001e"
+        }
+    },
+    {
+        "title": "Lead Java Developer (Backend)",
+        "description": "Lead Java Developer (Backend)",
+        "skills": [
+            "java",
+            "hadoop",
+            "reactjs"
+        ],
+        "location": "Opera Solutions Delhi, Sector 16A, NOIDA, Uttar Pradesh, India",
+        "lngLat": [
+            77.3137756,
+            28.5679882
+        ],
+        "createdOn": {
+            "$date": 1378408871193
+        },
+        "company": {
+            "name": "Opera Solutions",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad016911410500001f"
+        }
+    },
+    {
+        "title": "Member Technical Staff",
+        "description": "Member Technical Staff",
+        "skills": [
+            "ruby"
+        ],
+        "location": "I-1A, City Center, Sector 25-A, Sector 25A, Noida, Uttar Pradesh, India",
+        "lngLat": [
+            77.3379612,
+            28.5843933
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Adobe",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad0169114105000020"
+        }
+    },
+    {
+        "title": "Principal Scientist ",
+        "description": "Principal Scientist ",
+        "skills": [
+            "python"
+        ],
+        "location": "Opera Solutions Delhi, Sector 16A, NOIDA, Uttar Pradesh, India",
+        "lngLat": [
+            77.3137756,
+            28.5679882
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Opera Solutions",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad0169114105000021"
+        }
+    },
+    {
+        "title": "Technical Account Manager",
+        "description": "Technical Account Manager",
+        "skills": [
+            "python"
+        ],
+        "location": "8th and 9th Floors, Tower C Building No. 8, Dlf Cyber City, Gurgaon, Haryana, India",
+        "lngLat": [
+            77.0888228,
+            28.4956242
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Google",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad0169114105000022"
+        }
+    },
+    {
+        "title": "DEVELOPER - JAVASCRIPT",
+        "description": "DEVELOPER - JAVASCRIPT",
+        "skills": [
+            "ruby"
+        ],
+        "location": "Na-3a, Shastri Nagar, Shastri Nagar, New Delhi, Delhi, India",
+        "lngLat": [
+            77.181686,
+            28.669992
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Exponential",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad0169114105000023"
+        }
+    },
+    {
+        "title": "Technical Account Manager, Android Partner Engineering",
+        "description": "Technical Account Manager, Android Partner Engineering",
+        "skills": [
+            "python"
+        ],
+        "location": "8th and 9th Floors, Tower C Building No. 8, Dlf Cyber City, Gurgaon, Haryana, India",
+        "lngLat": [
+            77.0888228,
+            28.4956242
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Google",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ad0169114105000024"
+        }
+    },
+    {
+        "title": "Web Developer - HTML, CSS, JavaScript",
+        "description": "Web Developer - HTML, CSS, JavaScript",
+        "skills": [
+            "node.js"
+        ],
+        "location": "12181 W. Bluff Creek Dr. Suite 1E, Playa Vista, CA, United States",
+        "lngLat": [
+            -118.4055825,
+            33.9780617
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ae0169114105000025"
+        }
+    },
+    {
+        "title": "Senior Software Engineer/Development Lead",
+        "description": "Senior Software Engineer/Development Lead",
+        "skills": [
+            "node.js"
+        ],
+        "location": "100 Montgomery Street, San Francisco, CA, United States",
+        "lngLat": [
+            -122.402306,
+            37.7904055
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "Talener Group",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ae0169114105000026"
+        }
+    },
+    {
+        "title": "Web Application Engineer - HTML5, CSS3, BackboneJS, JS Framework",
+        "description": "Web Application Engineer - HTML5, CSS3, BackboneJS, JS Framework",
+        "skills": [
+            "node.js"
+        ],
+        "location": "90 Park Avenue #1702, New York, NY, United States",
+        "lngLat": [
+            -73.9791168,
+            40.75068479999999
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ae0169114105000027"
+        }
+    },
+    {
+        "title": "Web Application Engineer - HTML5, CSS3, BackboneJS, JS Framework",
+        "description": "Web Application Engineer - HTML5, CSS3, BackboneJS, JS Framework",
+        "skills": [
+            "node.js"
+        ],
+        "location": "90 Park Avenue #1702, New York, NY, United States",
+        "lngLat": [
+            -73.9791168,
+            40.75068479999999
+        ],
+        "createdOn": {
+            "$date": 1378408871194
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9ae0169114105000028"
+        }
+    },
+    {
+        "title": "Analytics Opportunity in Cognizant",
+        "description": "Analytics Opportunity in Cognizant",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "Sector 21, Gurgaon, Haryana, India",
+        "lngLat": [
+            77.07227589999999,
+            28.5133929
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "Cognizant Technology Solutions",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af0169114105000029"
+        }
+    },
+    {
+        "title": "Product Evangelist, Hadoop",
+        "description": "Product Evangelist, Hadoop",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "701 1st Avenue, Sunnyvale, CA, United States",
+        "lngLat": [
+            -122.0251592,
+            37.4172368
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "Yahoo!",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002a"
+        }
+    },
+    {
+        "title": "Senior erlang developer - Erlang, OTP Development/Coding, Teleco",
+        "description": "Senior erlang developer - Erlang, OTP Development/Coding, Teleco",
+        "skills": [
+            "erlang"
+        ],
+        "location": "4437 Brookfield Corporate Drive #200, Chantilly, VA, United States",
+        "lngLat": [
+            -77.43887909999999,
+            38.8838379
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002b"
+        }
+    },
+    {
+        "title": "Java / Scala Engineers Needed - Growing eCommerce Firm in NYC!",
+        "description": "Java / Scala Engineers Needed - Growing eCommerce Firm in NYC!",
+        "skills": [
+            "scala"
+        ],
+        "location": "90 Park Avenue #1702, New York, NY, United States",
+        "lngLat": [
+            -73.9791168,
+            40.75068479999999
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002c"
+        }
+    },
+    {
+        "title": "Erlang developer, Python Develper, Back end engineer - Erlang,",
+        "description": "Erlang developer, Python Develper, Back end engineer - Erlang,",
+        "skills": [
+            "erlang"
+        ],
+        "location": "1400 North Shoreline Boulevard, Mountain View, CA, United States",
+        "lngLat": [
+            -122.079666,
+            37.41379209999999
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002d"
+        }
+    },
+    {
+        "title": "Erlang developer, Python Develper, Back end engineer - Erlang,",
+        "description": "Erlang developer, Python Develper, Back end engineer - Erlang,",
+        "skills": [
+            "erlang"
+        ],
+        "location": "1400 North Shoreline Boulevard, Mountain View, CA, United States",
+        "lngLat": [
+            -122.079666,
+            37.41379209999999
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002e"
+        }
+    },
+    {
+        "title": "Senior Erlang Developer - Erland, OTP Coding, Telecommunications",
+        "description": "Senior Erlang Developer - Erland, OTP Coding, Telecommunications",
+        "skills": [
+            "erlang"
+        ],
+        "location": "4437 Brookfield Corporate Drive #200, Chantilly, VA, United States",
+        "lngLat": [
+            -77.43887909999999,
+            38.8838379
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af016911410500002f"
+        }
+    },
+    {
+        "title": "Sr. Development Engineer - Platform",
+        "description": "Sr. Development Engineer - Platform",
+        "skills": [
+            "clojure"
+        ],
+        "location": "2800 Bridge Parkway #101, Redwood City, CA, United States",
+        "lngLat": [
+            -122.2568248,
+            37.5395174
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "Shutterfly",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af0169114105000030"
+        }
+    },
+    {
+        "title": "Senior Engineer Dev-OPS - Platform",
+        "description": "Senior Engineer Dev-OPS - Platform",
+        "skills": [
+            "clojure"
+        ],
+        "location": "2800 Bridge Parkway #101, Redwood City, CA, United States",
+        "lngLat": [
+            -122.2568248,
+            37.5395174
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "Shutterfly",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af0169114105000031"
+        }
+    },
+    {
+        "title": "Engineering Team Lead ",
+        "description": "Engineering Team Lead ",
+        "skills": [
+            "clojure"
+        ],
+        "location": "303 West Madison Street, Chicago, IL, United States",
+        "lngLat": [
+            -87.635605,
+            41.881543
+        ],
+        "createdOn": {
+            "$date": 1378408871200
+        },
+        "company": {
+            "name": "Commission Junction",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9af0169114105000032"
+        }
+    },
+    {
+        "title": "Sr. Web Developer - Ruby on Rails, Ruby, Unix, NoSQl, Git, Linux",
+        "description": "Sr. Web Developer - Ruby on Rails, Ruby, Unix, NoSQl, Git, Linux",
+        "skills": [
+            "ruby"
+        ],
+        "location": "550 Cochituate Road, Framingham, MA, United States",
+        "lngLat": [
+            -71.3915956,
+            42.308173
+        ],
+        "createdOn": {
+            "$date": 1378408871203
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000033"
+        }
+    },
+    {
+        "title": "Software Engineer - Ruby on Rails - Content and High Traffic Web",
+        "description": "Software Engineer - Ruby on Rails - Content and High Traffic Web",
+        "skills": [
+            "ruby"
+        ],
+        "location": "1400 North Shoreline Boulevard, Mountain View, CA, United States",
+        "lngLat": [
+            -122.079666,
+            37.41379209999999
+        ],
+        "createdOn": {
+            "$date": 1378408871203
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000034"
+        }
+    },
+    {
+        "title": "Working Student Python Development (f/m)  - # 631225",
+        "description": "Working Student Python Development (f/m)  - # 631225",
+        "skills": [
+            "python"
+        ],
+        "location": "Dornacher Straße 1, Feldkirchen, Germany",
+        "lngLat": [
+            11.7257,
+            48.151
+        ],
+        "createdOn": {
+            "$date": 1378408871203
+        },
+        "company": {
+            "name": "Intel Corporation",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000035"
+        }
+    },
+    {
+        "title": "Professional Services Consultant EMS/NMS",
+        "description": "Professional Services Consultant EMS/NMS",
+        "skills": [
+            "python"
+        ],
+        "location": "Lyoner Straße 15, Frankfurt, Germany",
+        "lngLat": [
+            8.628046099999999,
+            50.0813818
+        ],
+        "createdOn": {
+            "$date": 1378408871203
+        },
+        "company": {
+            "name": "Juniper Networks",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000036"
+        }
+    },
+    {
+        "title": "Software Engineer in Test",
+        "description": "Software Engineer in Test",
+        "skills": [
+            "python"
+        ],
+        "location": "Dienerstraße 12, Munich, Germany",
+        "lngLat": [
+            11.577375,
+            48.138604
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "Google",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000037"
+        }
+    },
+    {
+        "title": "Werkstudent (m/w) für Software Tool Themen (Job ID: 94485)",
+        "description": "Werkstudent (m/w) für Software Tool Themen (Job ID: 94485)",
+        "skills": [
+            "python"
+        ],
+        "location": "Siemensstraße 12, Regensburg, Germany",
+        "lngLat": [
+            12.1419954,
+            49.00675649999999
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "Continental",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000038"
+        }
+    },
+    {
+        "title": "Software Engineer in Test (SDET)",
+        "description": "Software Engineer in Test (SDET)",
+        "skills": [
+            "python"
+        ],
+        "location": "Vattmannstraße 3, Paderborn, Germany",
+        "lngLat": [
+            8.795878399999999,
+            51.726242
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "McAfee",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b10169114105000039"
+        }
+    },
+    {
+        "title": "Python Developer - Hot Mobile Startup - Python - Smart Phone Dev",
+        "description": "Python Developer - Hot Mobile Startup - Python - Smart Phone Dev",
+        "skills": [
+            "python"
+        ],
+        "location": "12181 W. Bluff Creek Dr. Suite 1E, Playa Vista, CA, United States",
+        "lngLat": [
+            -118.4055825,
+            33.9780617
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b1016911410500003a"
+        }
+    },
+    {
+        "title": "Python Developer - Hot Mobile Startup - Python - Smart Phone Dev",
+        "description": "Python Developer - Hot Mobile Startup - Python - Smart Phone Dev",
+        "skills": [
+            "python"
+        ],
+        "location": "12181 W. Bluff Creek Dr. Suite 1E, Playa Vista, CA, United States",
+        "lngLat": [
+            -118.4055825,
+            33.9780617
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b1016911410500003b"
+        }
+    },
+    {
+        "title": "Python Developer - Python Programmer - Python Engineer - Python",
+        "description": "Python Developer - Python Programmer - Python Engineer - Python",
+        "skills": [
+            "python"
+        ],
+        "location": "12181 W. Bluff Creek Dr. Suite 1E, Playa Vista, CA, United States",
+        "lngLat": [
+            -118.4055825,
+            33.9780617
+        ],
+        "createdOn": {
+            "$date": 1378408871204
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b1016911410500003c"
+        }
+    },
+    {
+        "title": "Kundenberater Geschäftskunden in Vollzeit (38h) in Nürnberg (m/w)",
+        "description": "Kundenberater Geschäftskunden in Vollzeit (38h) in Nürnberg (m/w)",
+        "skills": [
+            "php"
+        ],
+        "location": "Bayreuther Straße 1, Nuremberg, Germany",
+        "lngLat": [
+            11.08935,
+            49.45903
+        ],
+        "createdOn": {
+            "$date": 1378408871207
+        },
+        "company": {
+            "name": "Deutsche Telekom",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b3016911410500003d"
+        }
+    },
+    {
+        "title": "Software Developer Portal (m/f)",
+        "description": "Software Developer Portal (m/f)",
+        "skills": [
+            "php"
+        ],
+        "location": "Harburger Schloßstraße 28, Hamburg, Deutschland",
+        "lngLat": [
+            9.9847,
+            53.46529
+        ],
+        "createdOn": {
+            "$date": 1378408871207
+        },
+        "company": {
+            "name": "Innogames GmbH",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b3016911410500003e"
+        }
+    },
+    {
+        "title": "PHP Developer, PHP, LAMP, Fast growing co. looking for PHP guru!",
+        "description": "PHP Developer, PHP, LAMP, Fast growing co. looking for PHP guru!",
+        "skills": [
+            "php"
+        ],
+        "location": "420 Trowbridge Drive, Fond du Lac, WI, United States",
+        "lngLat": [
+            -88.47849099999999,
+            43.741754
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b3016911410500003f"
+        }
+    },
+    {
+        "title": "Junior PHP Developer - Entry Level PHP Developer",
+        "description": "Junior PHP Developer - Entry Level PHP Developer",
+        "skills": [
+            "php"
+        ],
+        "location": "486 Coalville Way, Draper, UT, United States",
+        "lngLat": [
+            -111.877236,
+            40.480824
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000040"
+        }
+    },
+    {
+        "title": "Solutions Architecture Consultant - Cloud Solutions",
+        "description": "Solutions Architecture Consultant - Cloud Solutions",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "39 Avenue des 2 Fontaines, Metz, France",
+        "lngLat": [
+            6.1732985,
+            49.1372278
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "Dell",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000041"
+        }
+    },
+    {
+        "title": "Senior Product Manager, Hadoop and Big Data",
+        "description": "Senior Product Manager, Hadoop and Big Data",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "701 1st Avenue, Sunnyvale, CA, United States",
+        "lngLat": [
+            -122.0251592,
+            37.4172368
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "Yahoo!",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000042"
+        }
+    },
+    {
+        "title": "Database engineer, Hadoop, Incredible company with amazing perks",
+        "description": "Database engineer, Hadoop, Incredible company with amazing perks",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "550 Cochituate Road, Framingham, MA, United States",
+        "lngLat": [
+            -71.3915956,
+            42.308173
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "CyberCoders",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000043"
+        }
+    },
+    {
+        "title": "Solutions Engineer - Big Data",
+        "description": "Solutions Engineer - Big Data",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "455 West Maude Avenue, Sunnyvale, CA, United States",
+        "lngLat": [
+            -122.0318925,
+            37.3902905
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "Hortonworks",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000044"
+        }
+    },
+    {
+        "title": "MTS - Hadoop Distributed File System",
+        "description": "MTS - Hadoop Distributed File System",
+        "skills": [
+            "hadoop"
+        ],
+        "location": "455 West Maude Avenue, Sunnyvale, CA, United States",
+        "lngLat": [
+            -122.0318925,
+            37.3902905
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "Hortonworks",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b30169114105000045"
+        }
+    },
+    {
+        "title": "Senior Software Engineer Java / Scala",
+        "description": "Senior Software Engineer Java / Scala",
+        "skills": [
+            "scala"
+        ],
+        "location": "Berliner Straße 142, Berlin, Germany",
+        "lngLat": [
+            13.3245165,
+            52.48636
+        ],
+        "createdOn": {
+            "$date": 1378408871208
+        },
+        "company": {
+            "name": "Nokia",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228d9b40169114105000046"
+        }
+    },
+    {
+        "title": "Java Team Lead",
+        "description": "Java Team Lead",
+        "skills": [
+            "java"
+        ],
+        "location": "Inventum Technologies Private Limited, C-70, Phase 2 Extension, NOIDA, Uttar Pradesh 201305, India",
+        "lngLat": [
+            77.40707999999999,
+            28.532293
+        ],
+        "createdOn": {
+            "$date": 1378409119885
+        },
+        "company": {
+            "name": "Inventum",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228daa0b541936e05000001"
+        }
+    },
+    {
+        "title": "Senior/Java Developer (Java/J2EE, Web services) ",
+        "description": "Senior/Java Developer (Java/J2EE, Web services) ",
+        "skills": [
+            "java"
+        ],
+        "location": "Lower Ground Floor, B-85,, Sector 2, Noida, Uttar Pradesh, India",
+        "lngLat": [
+            77.31592959999999,
+            28.5846875
+        ],
+        "createdOn": {
+            "$date": 1378409119884
+        },
+        "company": {
+            "name": "Unicommerce eSolutions Pvt. Ltd. ",
+            "website": "http://mydreamcompany.com",
+            "contact": {
+                "email": "company@company.com",
+                "telephone": "0091-111111111"
+            }
+        },
+        "_id": {
+            "$oid": "5228daa0b541936e05000002"
+        }
+    }
+]
