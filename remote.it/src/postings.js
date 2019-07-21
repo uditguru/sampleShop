@@ -13,7 +13,7 @@ import MoreVert from '@material-ui/icons/MoreVert';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
 import MenuList from './menulist';
 import ContentLoader from 'react-content-loader';
-
+import Data from './data.json';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -108,19 +108,17 @@ function Posts(props) {
   }
 
    function handleScroll(e){
-    let element = e.target
-    if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-      console.log("scrolled");
-      
-    }
+    e.preventDefault();
+    console.log("the kind")
    }
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(res => res.json())
-      .then(data => {
-        setData({ posts: data, isLoading: false })
-      })
+    //fetch('https://jsonplaceholder.typicode.com/posts')
+      //.then(res => res.json())
+      //.then(data => {
+        //setData({ posts: data, isLoading: false })
+      //})
+      setData({posts : Data, isLoading : false})
   }, []);
 
 
@@ -145,7 +143,7 @@ function Posts(props) {
           </Breakpoint>
         </div>
       ) : (
-          <div onScrollCapture={handleScroll}>
+          <div onScroll={handleScroll}>
             <Breakpoint medium down >
               <Container className={classes.containerSmall}>
                 <Typography variant="h6" component="h6"> {data.posts.length}   Results</Typography>
@@ -157,21 +155,18 @@ function Posts(props) {
                     <CardContent>
                       <Typography variant="h6" component="h3" color="primary">
                         <Link className={classes.link} to={`/jobs/${post.id}`} >
-                          Software Engineer II
+                          {post.title}
             </Link>
                       </Typography>
                       <Typography variant="caption">
-                        Palo Alto, United States
+                        {post.location}
           </Typography>
                       <Typography className={classes.pos} >
-                        $10k - $ 30k
+                        {post.company.name}
           </Typography>
-                      <Chip className={classes.chip} clickable={true} label="Nodejs" />
-                      <Chip className={classes.chip} clickable={true} label="Reactjs" />
-                      <Chip className={classes.chip} clickable={true} label="Javascript" />
-                      <Chip className={classes.chip} clickable={true} label="Full-Stack" />
-                      <Chip className={classes.chip} clickable={true} label="React-Native" />
-                      <Chip className={classes.chip} clickable={true} label="Angular.js" />
+                      {post.skills.map( (skill, id) =>(
+                        <Chip key={id} className={classes.chip} clickable={true} label={skill} />
+                      ) )}                     
                     </CardContent>
                   </Card>
 
