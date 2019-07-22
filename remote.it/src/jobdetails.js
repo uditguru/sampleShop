@@ -1,23 +1,20 @@
 import React, {useState, useEffect} from 'react';
-
-
+import Data from './data.json'
 
 function JobDetails(props){
   const id = props.match.params;
-  const [ info, setInfo] = useState({ title : ''});
-
+  const [ info, setInfo] = useState({});  
 useEffect(() => {
-  fetch(`https://jsonplaceholder.typicode.com/posts/${id.jobid}`)
-  .then( data => data.json())
-  .then( res => {
-    setInfo(res);
-  })
-
-},[id]);
-
+  setInfo(Data[id.jobid])
+},[id.jobid]);
 
   return(
-    <h1> {info.title} </h1>
+    <div>
+     {info.location}
+     {
+       info.company && (<h2> {info.company.name} </h2>)
+     }
+    </div>
   );
 }
 export default JobDetails;

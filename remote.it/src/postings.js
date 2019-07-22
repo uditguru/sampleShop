@@ -154,7 +154,7 @@ function Posts(props) {
                     </IconButton>
                     <CardContent>
                       <Typography className={classes.jbTitle} color="textPrimary">
-                        <Link className={classes.link} to={`/jobs/${post.id}`} >
+                        <Link className={classes.link} to={`/jobs/${index}`} >
                           {post.title.substring(0, 27)}...
             </Link>
                       </Typography>
