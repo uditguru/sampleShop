@@ -12,13 +12,17 @@ import Data from './data.json'
 const useStyles = makeStyles(theme => ({
  info :{
    marginRight : 5,
+   color : 'green'
  },
  des : {
    marginTop : 15
  },
  chip: {
+  marginTop: theme.spacing(1),
   marginRight: theme.spacing(1),
-  marginBottom: theme.spacing(1),
+},
+h6 : {
+  font : 'italic'
 }
 }));
 
@@ -36,8 +40,9 @@ function JobDetails(props) {
         <Typography variant="h6" gutterBottom={true} >
           {info.title}
         </Typography>
+        <Typography variant="caption" color="secondary" >{info.location}</Typography>
         <div className={classes.info}>
-        <Typography className={classes.info} variant="caption" color="secondary" gutterBottom={true}>
+        <Typography className={classes.info} variant="caption"  gutterBottom={true}>
           {
             info.company && (<span style={{ paddingBottom : 50}}> {info.company.name} </span>)
           }
@@ -48,20 +53,18 @@ function JobDetails(props) {
           }
         </Typography>
         </div>
-        <Divider/>
-        <div style={{width : '100%' , height: '3vh'}}>
+       
         <Breakpoint medium down>
-            <Button variant="contained" color="primary" style={{marginTop: '5%', marginBottom: '5%', float: 'right', width : '100%' }} >Apply Now</Button>
+            <Button variant="contained"  style={{color : 'white', background : '#3490DC',marginTop: '5%', marginBottom: '5%', float: 'right', width : '100%' }} >Apply Now</Button>
         </Breakpoint>
         <Breakpoint medium up>
-            <Button variant="contained" color="primary" style={{ float: 'right', width : '20%' }} >Apply Now</Button>
+            <Button variant="contained"  style={{ color : 'white', background : '#3490DC', right : '5%' , width : '30%', top : '15%', position : 'absolute' }} >Apply Now</Button>
         </Breakpoint>
-        </div>
       </Container>
       
       <Container className={classes.des}>
-      <Divider/>
         <Typography variant="h6" component="h6">Job Description</Typography>
+        <Divider/>
         <Typography>
           {info.description}
         </Typography>
@@ -70,8 +73,18 @@ function JobDetails(props) {
         A datagrid enables you to display and edit data. ... Maybe you used libraries like react-bootstrap-table, react-grid, or react-table. .... Copy your account and application ID from the dashboard and replace them with the string 
         </Typography>
         <br/>
-        <Typography variant="h6" component="h6">Skills </Typography>
-
+        <Typography variant="h6" component="h6">Requirements</Typography>
+        <Divider/>
+        <Typography>
+          {info.description}
+        </Typography>
+        <br/>
+        <Typography variant="body2" component="p">
+        A datagrid enables you to display and edit data. ... Maybe you used libraries like react-bootstrap-table, react-grid, or react-table. .... Copy your account and application ID from the dashboard and replace them with the string 
+        </Typography>
+        <br/>
+        <Typography gutterBottom={true} variant="h6" component="h6">Skills </Typography>
+        <Divider/>
         {
           info.skills && info.skills.map((skill, index) => (
             <Chip key={index} className={classes.chip} clickable={true} label={skill} />
