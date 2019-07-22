@@ -23,6 +23,10 @@ const useStyles = makeStyles(theme => ({
 },
 h6 : {
   font : 'italic'
+},
+page:{
+  marginTop: 20,
+  marginBottom : 20
 }
 }));
 
@@ -31,12 +35,13 @@ function JobDetails(props) {
   const id = props.match.params;
   const [info, setInfo] = useState({});
   useEffect(() => {
-    setInfo(Data[id.jobid])
+    setInfo(Data[id.jobid]);
+    window.scrollTo(0, 0);
   }, [id.jobid]);
 
   return (
-    <div>
-      <Container style={{marginTop : 20}}>
+    <div className={classes.page}>
+      <Container>
         <Typography variant="h6" gutterBottom={true} >
           {info.title}
         </Typography>
