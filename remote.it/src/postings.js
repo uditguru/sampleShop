@@ -146,16 +146,16 @@ function Posts(props) {
           <div onScroll={handleScroll}>
             <Breakpoint medium down >
               <Container className={classes.containerSmall}>
-                <Typography variant="h6" component="h6"> {data.posts.length}   Results</Typography>
+                <Typography variant="button" component="h6"> {data.posts.length}   Results</Typography>
                 {data.posts.map((post, index) => (
                   <Card key={index} className={classes.card}>
                     <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
                       <MoreVert />
                     </IconButton>
                     <CardContent>
-                      <Typography className={classes.jbTitle} variant="h6" component="h3" color="primary">
+                      <Typography className={classes.jbTitle} color="textPrimary">
                         <Link className={classes.link} to={`/jobs/${post.id}`} >
-                          {post.title}
+                          {post.title.substring(0, 27)}...
             </Link>
                       </Typography>
                       <Typography variant="caption">
@@ -164,7 +164,7 @@ function Posts(props) {
                       <Typography className={classes.pos} >
                         {post.company.name}
           </Typography>
-                      {post.skills.map( (skill, id) =>(
+                      {post.skills.slice(0 ,4).map( (skill, id) =>(
                         <Chip key={id} className={classes.chip} clickable={true} label={skill} />
                       ) )}                     
                     </CardContent>
@@ -182,9 +182,9 @@ function Posts(props) {
                       <MoreVert />
                     </IconButton>
                     <CardContent>
-                      <Typography className={classes.jbTitle} variant="h6" component="h3" color="primary">
+                      <Typography className={classes.jbTitle}  color="primary">
                         <Link className={classes.link} to={`/jobs/${post.id}`} >
-                          {post.title}
+                          {post.title.substring(0,60)}...
             </Link>
                       </Typography>
                       <Typography variant="caption">
