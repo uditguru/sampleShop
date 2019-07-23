@@ -85,7 +85,7 @@ function JobDetails(props) {
         </Typography>
         <br/>
         <Typography variant="body2" component="p">
-        A datagrid enables you to display and edit data. ... Maybe you used libraries like react-bootstrap-table, react-grid, or react-table. .... Copy your account and application ID from the dashboard and replace them with the string 
+        A datagrid enables you to display and edit data. ... Maybe you used libraries like react-bootstrap-table, react-grid, or react-table. ....
         </Typography>
         <br/>
         <Typography gutterBottom={true} variant="h6" component="h6">Skills </Typography>

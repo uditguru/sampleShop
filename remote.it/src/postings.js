@@ -124,7 +124,7 @@ function Posts(props) {
     const docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
     const windowBottom = windowHeight + window.pageYOffset;
     if (windowBottom >= docHeight) {
-      setSize(size => size + 1)
+      setSize(size => size + 5)
 
     }
   }
@@ -192,12 +192,24 @@ function Posts(props) {
                   </Card>
 
                 ))}
+                <div  ref={main}> {
+                data.posts.slice(0, size + 5).length == data.posts.length ? (
+                  <span>No more Data</span>
+                ) : (
+                    <Lottie
+                      options={defaultOptions}
+                      width={150}
+                      height={50}
+                      />
+                              )
+            } </div>
               </Container>
+              
             </Breakpoint>
             <Breakpoint medium up>
               <Container className={classes.container}>
-                <Typography variant="h6" component="h6">  {data.posts.length}  Results</Typography>
-                {data.posts.map((post, index) => (
+                <Typography variant="h6" component="h6">  {data.posts.slice(0, size + 5).length}  Results</Typography>
+                {data.posts.slice(0, size + 5).map((post, index) => (
                   <Card key={index} className={classes.card}>
                     <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
                       <MoreVert />
@@ -223,20 +235,12 @@ function Posts(props) {
                   </Card>
 
                 ))}
+                <div  ref={main}></div>
               </Container>
+              
             </Breakpoint>
             <Container>
-              <div ref={main}> {
-                data.posts.slice(0, size + 5).length == data.posts.length ? (
-                  <span>No more Data</span>
-                ) : (
-                    <Lottie
-                      options={defaultOptions}
-                      width={150}
-                      height={50}
-                      />
-                              )
-            } </div>
+              
             </Container>
           </div>)}
       <MenuList
