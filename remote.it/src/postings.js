@@ -21,8 +21,10 @@ import Loader from './img/loader.json'
 const useStyles = makeStyles(theme => ({
   card: {
     minWidth: 250,
-    marginTop: 10,
-    marginBottom: 10
+    marginTop: 15,
+    marginBottom: 15,
+    borderRadius : 15,
+
   },
   bullet: {
     display: 'inline-block',
@@ -104,6 +106,9 @@ function Posts(props) {
   const [id, setId] = React.useState(null);
   const [open, setOpen] = React.useState(false);
 
+  function onlyUnique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
 
   function handleClickOpen(id) {
     setOpen(true);
@@ -177,7 +182,7 @@ function Posts(props) {
 
                         post.company &&
                         <div style={{ height: '100%' }}>
-                          <Avatar alt="Remy Sharp" src={`http://logo.clearbit.com/${post.company.website}`} className={classes.avatar} />
+                          <Avatar alt="Remy Sharp" src={`http://logo.clearbit.com/${post.company.website.replace(/(^\w+:|^)\/\//, '')}`} className={classes.avatar} />
                         </div>
 
                       }
@@ -208,7 +213,7 @@ function Posts(props) {
 
 
 
-                      {post.skills.slice(0, 4).map((skill, id) => (
+                      {post.skills.filter(onlyUnique).slice(0, 4).map((skill, id) => (
                         <Chip key={id} className={classes.chip} clickable={true} label={skill} />
                       ))}
                     </CardContent>

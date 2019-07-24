@@ -17,7 +17,7 @@
         },
         "company": {
             "name": "Expedia",
-            "website": "expedia.com",
+            "website": "https://expedia.com",
             "contact": {
                 "email": "company@company.com",
                 "telephone": "0091-111111111"
@@ -47,7 +47,7 @@
         },
         "company": {
             "name": "Expedia",
-            "website": "expediagroup.com",
+            "website": "http://expedia.com",
             "contact": {
                 "email": "company@company.com",
                 "telephone": "0091-111111111"
@@ -76,7 +76,7 @@
         },
         "company": {
             "name": "CyberCoders",
-            "website": "CyberCoders.com",
+            "website": "https://cybercoders.com",
             "contact": {
                 "email": "company@company.com",
                 "telephone": "0091-111111111"
@@ -149,6 +149,8 @@
         "description": "Lead Java Developer (Backend)",
         "skills": [
             "java",
+            "java",
+            "java",
             "hadoop",
             "reactjs"
         ],
@@ -176,6 +178,10 @@
         "title": "Member Technical Staff",
         "description": "Member Technical Staff",
         "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
             "ruby"
         ],
         "location": "I-1A, City Center, Sector 25-A, Sector 25A, Noida, Uttar Pradesh, India",
@@ -188,7 +194,7 @@
         },
         "company": {
             "name": "Adobe",
-            "website": "Adobe.com",
+            "website": "http://adobe.com",
             "contact": {
                 "email": "company@company.com",
                 "telephone": "0091-111111111"
@@ -202,6 +208,10 @@
         "title": "Principal Scientist ",
         "description": "Principal Scientist ",
         "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
             "python"
         ],
         "location": "Opera Solutions Delhi, Sector 16A, NOIDA, Uttar Pradesh, India",
@@ -228,7 +238,11 @@
         "title": "Technical Account Manager",
         "description": "Technical Account Manager",
         "skills": [
-            "python"
+            "python",
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js"
         ],
         "location": "8th and 9th Floors, Tower C Building No. 8, Dlf Cyber City, Gurgaon, Haryana, India",
         "lngLat": [
@@ -254,6 +268,10 @@
         "title": "DEVELOPER - JAVASCRIPT",
         "description": "DEVELOPER - JAVASCRIPT",
         "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
             "ruby"
         ],
         "location": "Na-3a, Shastri Nagar, Shastri Nagar, New Delhi, Delhi, India",
@@ -280,6 +298,10 @@
         "title": "Technical Account Manager, Android Partner Engineering",
         "description": "Technical Account Manager, Android Partner Engineering",
         "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
             "python"
         ],
         "location": "8th and 9th Floors, Tower C Building No. 8, Dlf Cyber City, Gurgaon, Haryana, India",
@@ -306,6 +328,10 @@
         "title": "Web Developer - HTML, CSS, JavaScript",
         "description": "Web Developer - HTML, CSS, JavaScript",
         "skills": [
+            "hadoop",
+            "hadoop",
+            "Angular",
+            "node.js",
             "node.js"
         ],
         "location": "12181 W. Bluff Creek Dr. Suite 1E, Playa Vista, CA, United States",
@@ -332,6 +358,9 @@
         "title": "Senior Software Engineer/Development Lead",
         "description": "Senior Software Engineer/Development Lead",
         "skills": [
+            "hadoop",
+            "Angular",
+            "node.js",
             "node.js"
         ],
         "location": "100 Montgomery Street, San Francisco, CA, United States",

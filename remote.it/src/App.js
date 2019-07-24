@@ -56,9 +56,9 @@ function App() {
     <Router>
       <div>
 
-      <AppBar position="sticky" color='inherit'>
+      <AppBar position="sticky" color="inherit">
        <Toolbar>
-         <IconButton onClick={toggleDrawer('left', true)} edge="start" className={useStyles.menuButton} color="secondary" aria-label="Menu">
+         <IconButton onClick={toggleDrawer('left', true)} edge="start" className={useStyles.menuButton} color="inherit" aria-label="Menu">
            <MenuIcon />
          </IconButton>
          <Typography variant="h6" className={useStyles.title}>
