@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Lottie from 'react-lottie';
+import Avatar from '@material-ui/core/Avatar';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import IconButton from '@material-ui/core/IconButton';
@@ -155,7 +157,7 @@ function Posts(props) {
               </Card>
             </Container>
           </Breakpoint>
-          <Breakpoint medium up >
+          <Breakpoint large up >
             <Container className={classes.container}>
               <Card>
                 <MyLoader />
@@ -170,21 +172,42 @@ function Posts(props) {
                 <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
                 {data.posts.slice(0, size + 5).map((post, index) => (
                   <Card key={index} className={classes.card}>
-                    <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
-                      <MoreVert />
-                    </IconButton>
+                    <CardHeader
+                      avatar={
+
+                        post.company &&
+                        <div style={{ height: '100%' }}>
+                          <Avatar alt="Remy Sharp" src={`http://logo.clearbit.com/${post.company.website}`} className={classes.avatar} />
+                        </div>
+
+                      }
+                      action={
+                        <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
+                          <MoreVert />
+                        </IconButton>
+                      }
+                      title={
+                        <Typography className={classes.jbTitle} color="textPrimary">
+                          <Link className={classes.link} to={`/jobs/${index}`} >
+                            {post.title.substring(0, 27)}...
+                        </Link>
+                        </Typography>
+                      }
+                      subheader={
+                        <div>
+                        <Typography className={classes.pos} >
+                          {post.company.name}
+                        </Typography>
+                        <Typography variant="caption">
+                          {post.location}
+                        </Typography>
+                        </div>
+                        }
+                    />
                     <CardContent>
-                      <Typography className={classes.jbTitle} color="textPrimary">
-                        <Link className={classes.link} to={`/jobs/${index}`} >
-                          {post.title.substring(0, 27)}...
-            </Link>
-                      </Typography>
-                      <Typography variant="caption">
-                        {post.location}
-                      </Typography>
-                      <Typography className={classes.pos} >
-                        {post.company.name}
-                      </Typography>
+
+
+
                       {post.skills.slice(0, 4).map((skill, id) => (
                         <Chip key={id} className={classes.chip} clickable={true} label={skill} />
                       ))}
@@ -192,55 +215,74 @@ function Posts(props) {
                   </Card>
 
                 ))}
-                <div  ref={main}> {
-                data.posts.slice(0, size + 5).length == data.posts.length ? (
-                  <span>No more Data</span>
-                ) : (
-                    <Lottie
-                      options={defaultOptions}
-                      width={150}
-                      height={50}
+                <div ref={main}> {
+                  data.posts.slice(0, size + 5).length == data.posts.length ? (
+                    <span>No more Data</span>
+                  ) : (
+                      <Lottie
+                        options={defaultOptions}
+                        width={150}
+                        height={50}
                       />
-                              )
-            } </div>
+                    )
+                } </div>
               </Container>
-              
+
             </Breakpoint>
-            <Breakpoint medium up>
+            <Breakpoint large up>
               <Container className={classes.container}>
-                <Typography variant="h6" component="h6">  {data.posts.slice(0, size + 5).length}  Results</Typography>
+              <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
                 {data.posts.slice(0, size + 5).map((post, index) => (
                   <Card key={index} className={classes.card}>
-                    <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
-                      <MoreVert />
-                    </IconButton>
+                    <CardHeader
+                      avatar={
+
+                        post.company &&
+                        <div style={{ height: '100%' }}>
+                          <Avatar alt="Remy Sharp" src={`http://logo.clearbit.com/${post.company.website}`} className={classes.avatar} />
+                        </div>
+
+                      }
+                      action={
+                        <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
+                          <MoreVert />
+                        </IconButton>
+                      }
+                      title={
+                        <Typography className={classes.jbTitle} color="textPrimary">
+                          <Link className={classes.link} to={`/jobs/${index}`} >
+                            {post.title.substring(0, 27)}...
+                        </Link>
+                        </Typography>
+                      }
+                      subheader={
+                        <div>
+                        <Typography className={classes.pos} >
+                          {post.company.name}
+                        </Typography>
+                        <Typography variant="caption">
+                          {post.location}
+                        </Typography>
+                        </div>
+                        }
+                    />
                     <CardContent>
-                      <Typography className={classes.jbTitle} color="primary">
-                        <Link className={classes.link} to={`/jobs/${index}`} >
-                          {post.title.substring(0, 60)}...
-            </Link>
-                      </Typography>
-                      <Typography variant="caption">
-                        {post.location}
-                      </Typography>
-                      <Typography className={classes.pos} >
-                        {post.company.name}
-                      </Typography>
-                      {post.skills.map((skill, id) => (
+
+
+
+                      {post.skills.slice(0, 4).map((skill, id) => (
                         <Chip key={id} className={classes.chip} clickable={true} label={skill} />
                       ))}
                     </CardContent>
-
-
                   </Card>
 
                 ))}
-                <div  ref={main}></div>
+                <div ref={main}></div>
               </Container>
-              
+
             </Breakpoint>
             <Container>
-              
+
             </Container>
           </div>)}
       <MenuList

@@ -26,7 +26,8 @@ h6 : {
 },
 page:{
   marginTop: 20,
-  marginBottom : 20
+  marginBottom : 20,
+  alignItems: 'center'
 }
 }));
 
@@ -62,7 +63,7 @@ function JobDetails(props) {
         <Breakpoint medium down>
             <Button variant="contained"  style={{color : 'white', background : '#3490DC',marginTop: '5%', marginBottom: '5%', float: 'right', width : '100%' }} >Apply Now</Button>
         </Breakpoint>
-        <Breakpoint medium up>
+        <Breakpoint large up>
             <Button variant="contained"  style={{ color : 'white', background : '#3490DC', right : '5%' , width : '30%', top : '15%', position : 'absolute' }} >Apply Now</Button>
         </Breakpoint>
       </Container>
