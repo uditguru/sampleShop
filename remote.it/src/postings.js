@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Lottie from 'react-lottie';
 import Avatar from '@material-ui/core/Avatar';
+import Fab from '@material-ui/core/Fab';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -12,19 +13,24 @@ import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import IconButton from '@material-ui/core/IconButton';
 import MoreVert from '@material-ui/icons/MoreVert';
+import FilterList from '@material-ui/icons/FilterList';
+
 import Breakpoint from 'react-socks';
 import MenuList from './menulist';
 import ContentLoader from 'react-content-loader';
 import Data from './data.json';
 import Loader from './img/loader.json'
+import { jsxEmptyExpression } from '@babel/types';
+import Options from './options';
+import MenuBig from './menuBig';
+
 
 const useStyles = makeStyles(theme => ({
   card: {
     minWidth: 250,
-    marginTop: 15,
-    marginBottom: 15,
+    marginTop: 10,
+    marginBottom: 10,
     borderRadius : 15,
-
   },
   bullet: {
     display: 'inline-block',
@@ -57,6 +63,7 @@ const useStyles = makeStyles(theme => ({
   link: {
     textDecoration: 'none',
     color: 'blue',
+    whiteSpace : 'pre'
   },
   icon: {
     position: 'absolute',
@@ -68,7 +75,13 @@ const useStyles = makeStyles(theme => ({
   },
   mpaper: {
     marginRight: theme.spacing(2),
-  }
+  },
+  margin: {
+    position : 'fixed',
+    bottom : '5%',
+    right : '5%',
+    zIndex : 99
+  },
 }));
 
 const defaultOptions = {
@@ -105,6 +118,15 @@ function Posts(props) {
   const [size, setSize] = useState(0);
   const [id, setId] = React.useState(null);
   const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleMenuClose() {
+    setAnchorEl(null);
+  }
 
   function onlyUnique(value, index, self) { 
     return self.indexOf(value) === index;
@@ -123,6 +145,11 @@ function Posts(props) {
   function handleClose() {
     setOpen(false)
   }
+
+  function filterData(e){
+    console.log(e);
+    
+  } 
 
   function handleScroll() {
     const windowHeight = "innerHeight" in window ? window.innerHeight : document.documentElement.offsetHeight;
@@ -172,6 +199,7 @@ function Posts(props) {
         </div>
       ) : (
           <div>
+            
             <Breakpoint medium down >
               <Container className={classes.containerSmall}>
                 <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
@@ -187,9 +215,11 @@ function Posts(props) {
 
                       }
                       action={
-                        <IconButton className={classes.icon} onClick={() => handleClickOpen(index)} aria-label="Menu">
+                        <div>
+                        <IconButton onClick={() => handleClickOpen(index)} aria-label="Menu">
                           <MoreVert />
                         </IconButton>
+                        </div>
                       }
                       title={
                         <Typography className={classes.jbTitle} color="textPrimary">
@@ -203,18 +233,15 @@ function Posts(props) {
                         <Typography className={classes.pos} >
                           {post.company.name}
                         </Typography>
-                        <Typography variant="caption">
-                          {post.location}
+                        <Typography style={{whiteSpace : 'pre'}} variant="caption">
+                          {post.location.substring(0, 35)}...
                         </Typography>
                         </div>
                         }
                     />
                     <CardContent>
-
-
-
                       {post.skills.filter(onlyUnique).slice(0, 4).map((skill, id) => (
-                        <Chip key={id} className={classes.chip} clickable={true} label={skill} />
+                        <Chip key={id} className={classes.chip} clickable={true} onClick={() => filterData(skill)} label={skill} />
                       ))}
                     </CardContent>
                   </Card>
@@ -296,7 +323,29 @@ function Posts(props) {
         id={id}
         onSelect={handleSelect}
       />
+
+      <Breakpoint medium down>
+      <Options 
+              anchorEl={anchorEl}
+              onClose={handleMenuClose}
+            />
+      <Fab size="small" 
+                color="secondary" 
+                aria-label="Add" 
+                className={classes.margin} 
+                onClick={handleClick} 
+                onClose={handleMenuClose}>
+                <FilterList />
+              </Fab>
+      </Breakpoint>
+      <Breakpoint large up>
+        <MenuBig />
+      </Breakpoint>
+      
+            
+            
     </div>
   )
 }
+
 export default Posts;

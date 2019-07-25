@@ -1,156 +1,79 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Breakpoint, { BreakpointProvider } from 'react-socks';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import SendIcon from '@material-ui/icons/Send';
 
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Container from '@material-ui/core/Container';
-import Checkbox from '@material-ui/core/Checkbox';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Typography from '@material-ui/core/Typography';
-import { Card } from '@material-ui/core';
+const StyledMenu = withStyles({
+  paper: {
+    border: '1px solid #d3d4d5',
+    marginBottom : 20
+  },
+})(props => (
+  <Menu
+    elevation={0}
+    getContentAnchorEl={null}
+    anchorOrigin={{
+      vertical: 'top',
+      horizontal: 'center',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'left',
+    }}
+    {...props}
+  />
+));
+
+const StyledMenuItem = withStyles(theme => ({
+  root: {
+    '&:focus': {
+      backgroundColor: theme.palette.primary.main,
+      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+        color: theme.palette.common.white,
+      },
+    },
+  },
+}))(MenuItem);
 
 
-const useStyles = makeStyles({
-  card: {
-    minWidth: 275,
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-  container: {
-    padding: 5
-  },
-  containerBig: {
-    marginTop : 10,
-    padding: 5,
-    position: 'absolute',
-    width: '20vw'
-  },
-  headingBig : {
-    margin : 20
-  }
-});
+function Options(props) {
+  
 
-function Options() {
-  const classes = useStyles();
   return (
     <div>
-      <Breakpoint medium down>
-        <Container className={classes.container}>
-          <ExpansionPanel>
-            <ExpansionPanelSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography className={classes.heading}>Filters</Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <List>
-                <ListItem>
-                  <Checkbox
-                    value="checkedA"
-                    inputProps={{
-                      'aria-label': 'primary checkbox',
-                    }}
-                  />
-                  <label> Contract </label>
-
-                </ListItem>
-                <ListItem>
-                  <Checkbox
-                    value="checkedA"
-                    inputProps={{
-                      'aria-label': 'primary checkbox',
-                    }}
-                  />
-                  <label> Full-Time </label>
-
-                </ListItem>
-                <ListItem>
-                  <Checkbox
-                    value="checkedA"
-                    inputProps={{
-                      'aria-label': 'primary checkbox',
-                    }}
-                  />
-                  <label> Visa Sponsor </label>
-
-                </ListItem>
-                <ListItem>
-                  <Checkbox
-                    value="checkedA"
-                    inputProps={{
-                      'aria-label': 'primary checkbox',
-                    }}
-                  />
-                  <label> Remote </label>
-                </ListItem>
-              </List>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-        </Container>
-      </Breakpoint>
-      <Breakpoint large up>
-        <Container className={classes.containerBig}>
-          <Card>
-            <Typography variant="button" component="h6" className={classes.headingBig}>Filters</Typography>
-            <List>
-              <ListItem>
-                <Checkbox
-                  value="checkedA"
-                  inputProps={{
-                    'aria-label': 'primary checkbox',
-                  }}
-                />
-                <label> Contract </label>
-
-              </ListItem>
-              <ListItem>
-                <Checkbox
-                  value="checkedA"
-                  inputProps={{
-                    'aria-label': 'primary checkbox',
-                  }}
-                />
-                <label> Full-Time </label>
-
-              </ListItem>
-              <ListItem>
-                <Checkbox
-                  value="checkedA"
-                  inputProps={{
-                    'aria-label': 'primary checkbox',
-                  }}
-                />
-                <label> Visa Sponsor </label>
-
-              </ListItem>
-              <ListItem>
-                <Checkbox
-                  value="checkedA"
-                  inputProps={{
-                    'aria-label': 'primary checkbox',
-                  }}
-                />
-                <label> Remote </label>
-              </ListItem>
-            </List>
-          </Card>
-        </Container>
-      </Breakpoint>
+     
+      <StyledMenu
+        id="customized-menu"
+        anchorEl={props.anchorEl}
+        keepMounted
+        open={Boolean(props.anchorEl)}
+        onClose={props.onClose}
+      >
+        <StyledMenuItem>
+          <ListItemIcon>
+            <SendIcon />
+          </ListItemIcon>
+          <ListItemText primary="Sent mail" />
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <ListItemIcon>
+            <DraftsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Drafts" />
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Inbox" />
+        </StyledMenuItem>
+      </StyledMenu>
     </div>
   );
 }

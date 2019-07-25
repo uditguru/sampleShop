@@ -6,6 +6,8 @@ import Button from '@material-ui/core/Button';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
 import Divider from '@material-ui/core/Divider';
 import Chip from '@material-ui/core/Chip';
+import Card from '@material-ui/core/Card';
+
 
 import Data from './data.json'
 
@@ -42,6 +44,7 @@ function JobDetails(props) {
 
   return (
     <div className={classes.page}>
+     <Card>
       <Container>
         <Typography variant="h6" gutterBottom={true} >
           {info.title}
@@ -67,7 +70,9 @@ function JobDetails(props) {
             <Button variant="contained"  style={{ color : 'white', background : '#3490DC', right : '5%' , width : '30%', top : '15%', position : 'absolute' }} >Apply Now</Button>
         </Breakpoint>
       </Container>
-      
+      </Card>
+
+      <Card>
       <Container className={classes.des}>
         <Typography variant="h6" component="h6">Job Description</Typography>
         <Divider/>
@@ -97,6 +102,8 @@ function JobDetails(props) {
           ))
         }
       </Container>
+      </Card>
+
     </div>
   );
 }
