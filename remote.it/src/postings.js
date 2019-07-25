@@ -206,7 +206,7 @@ function Posts(props) {
               <Container className={classes.containerSmall}>
                 <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
                 {data.posts.slice(0, size + 5).map((post, index) => (
-                <Slide direction="up" in={data.isLoading == false} mountOnEnter unmountOnExit>
+                <Grow in={data.isLoading == false} >
 
                   <Card key={index} className={classes.card}>
                     <CardHeader
@@ -249,7 +249,7 @@ function Posts(props) {
                       ))}
                     </CardContent>
                   </Card>
-                </Slide>
+                </Grow>
                 ))}
                 <div ref={main}> {
                   data.posts.slice(0, size + 5).length == data.posts.length ? (
@@ -269,6 +269,7 @@ function Posts(props) {
               <Container className={classes.container}>
               <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
                 {data.posts.slice(0, size + 5).map((post, index) => (
+                  <Grow in={data.isLoading == false}>
                   <Card key={index} className={classes.card}>
                     <CardHeader
                       avatar={
@@ -311,8 +312,9 @@ function Posts(props) {
                       ))}
                     </CardContent>
                   </Card>
-
+                  </Grow>
                 ))}
+                
                 <div ref={main}></div>
               </Container>
 

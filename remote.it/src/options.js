@@ -58,7 +58,7 @@ function Options(props) {
         open={Boolean(props.anchorEl)}
         onClose={props.onClose}
       >
-        <List>
+        <List style={{maxHeight : '40vh', overflow : 'scroll' , overflowY : 'none'}}>
          <ListItem>
          <Checkbox
             
@@ -91,10 +91,10 @@ function Options(props) {
           />
           <label>Remote Allowed</label>
          </ListItem>
-        </List>
+   
         <Divider />
         
-        <List>
+    
         <ListItem>
          <Checkbox
             
@@ -120,6 +120,10 @@ function Options(props) {
           <label>Netherlands, Amsterdam</label>
          </ListItem>
         </List>
+        <div>
+          <Button color="primary" style={{width :'50%'}}>Apply</Button>
+          <Button color="secondary" onClick={props.onClose} style={{width :'50%'}}>Cancel</Button>
+        </div>
       </StyledMenu>
     </div>
   );

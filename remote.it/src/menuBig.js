@@ -5,29 +5,31 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
+import Checkbox from '@material-ui/core/Checkbox';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import Checkbox from '@material-ui/core/Checkbox';
+import Typography from '@material-ui/core/Typography';
 
 const drawerWidth = "20%";
+const drawerHeight = "50%"
 
 const useStyles = makeStyles(theme => ({
   root: {
+      margin: 10,
     display: 'flex',
+    backgroundColor : 'white',
+    borderRadius :15
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-  },
-  
-  drawerPaper: {
-    width: drawerWidth,
-    top : '20%'
+    
   }
 }));
 
@@ -35,18 +37,16 @@ function MenuBig() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Card className={classes.root}>
       
-      <Drawer
-        className={classes.drawer}
+      
+    
+        <List className={classes.drawer}
         variant="permanent"
         classes={{
           paper: classes.drawerPaper,
         }}
-        anchor="left"
-      >
-        <Divider />
-        <List>
+        anchor="left">
          <ListItem>
          <Checkbox
             
@@ -79,10 +79,9 @@ function MenuBig() {
           />
           <label>Remote Allowed</label>
          </ListItem>
-        </List>
-        <Divider />
+      
         
-        <List>
+    
         <ListItem>
          <Checkbox
             
@@ -108,8 +107,7 @@ function MenuBig() {
           <label>Netherlands, Amsterdam</label>
          </ListItem>
         </List>
-      </Drawer>
-    </div>
+    </Card>
   );
 }
 export default MenuBig;
