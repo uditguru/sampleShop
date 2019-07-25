@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Lottie from 'react-lottie';
 import Avatar from '@material-ui/core/Avatar';
 import Fab from '@material-ui/core/Fab';
+import Grow from '@material-ui/core/Grow';
+import Slide from '@material-ui/core/Slide';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -204,6 +206,8 @@ function Posts(props) {
               <Container className={classes.containerSmall}>
                 <Typography variant="button" component="h6"> {data.posts.slice(0, size + 5).length}   Results</Typography>
                 {data.posts.slice(0, size + 5).map((post, index) => (
+                <Slide direction="up" in={data.isLoading == false} mountOnEnter unmountOnExit>
+
                   <Card key={index} className={classes.card}>
                     <CardHeader
                       avatar={
@@ -245,7 +249,7 @@ function Posts(props) {
                       ))}
                     </CardContent>
                   </Card>
-
+                </Slide>
                 ))}
                 <div ref={main}> {
                   data.posts.slice(0, size + 5).length == data.posts.length ? (
@@ -254,7 +258,7 @@ function Posts(props) {
                       <Lottie
                         options={defaultOptions}
                         width={150}
-                        height={50}
+                        height={200}
                       />
                     )
                 } </div>

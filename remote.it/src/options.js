@@ -8,6 +8,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import Checkbox from '@material-ui/core/Checkbox';
 
 const StyledMenu = withStyles({
   paper: {
@@ -47,7 +51,6 @@ function Options(props) {
 
   return (
     <div>
-     
       <StyledMenu
         id="customized-menu"
         anchorEl={props.anchorEl}
@@ -55,24 +58,68 @@ function Options(props) {
         open={Boolean(props.anchorEl)}
         onClose={props.onClose}
       >
-        <StyledMenuItem>
-          <ListItemIcon>
-            <SendIcon />
-          </ListItemIcon>
-          <ListItemText primary="Sent mail" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <DraftsIcon />
-          </ListItemIcon>
-          <ListItemText primary="Drafts" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
-        </StyledMenuItem>
+        <List>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>Visa Sponsorship</label>
+         </ListItem>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>Paid Relocation</label>
+         </ListItem>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>Remote only</label>
+         </ListItem>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>Remote Allowed</label>
+         </ListItem>
+        </List>
+        <Divider />
+        
+        <List>
+        <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>India</label>
+         </ListItem>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>USA</label>
+         </ListItem>
+         <ListItem>
+         <Checkbox
+            
+            value="checkedB"
+            color="primary"
+          />
+          <label>Netherlands, Amsterdam</label>
+         </ListItem>
+        </List>
       </StyledMenu>
     </div>
   );
