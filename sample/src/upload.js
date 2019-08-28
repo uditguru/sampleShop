@@ -31,12 +31,14 @@ function Upload(props) {
   
  
   function addProducts(props){
+    console.log(values);
+    
       fetch(url, 
         {
             method: 'POST',
             headers: {
               'Accept': 'application/json',
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
             },
             body: JSON.stringify(values)
       })
@@ -75,6 +77,7 @@ function Upload(props) {
       />
       <TextField
         id="outlined-name"
+        type="file"
         label="Image URL"
         className={classes.textField}
         value={values.image}

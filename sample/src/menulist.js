@@ -21,7 +21,7 @@ export default function MenuList(props) {
         <DialogTitle id="alert-dialog-title">{props.id && props.id.name}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            { props.id && <img src={props.id.image} />}
+            { props.id && <img style={{width : '100%'}} src={props.id.image} />}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
